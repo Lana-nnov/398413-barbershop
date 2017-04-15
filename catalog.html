@@ -7,7 +7,9 @@
   <body>
 	<header class="main-header">
       <div class="container">		
-		<a href="#"><img class="logo" src="http://placehold.it/111x24" alt=""></a>
+		<a href="#">
+			<img class="logo" src="http://placehold.it/111x24" alt="">
+		</a>
         <nav class="main-navigation">
           <ul>
             <li>
@@ -20,7 +22,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li>
-              <a class="current" href="#">Магазин</a>
+              <a>Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -34,48 +36,47 @@
     </header>
 	<main class="container">
 		<h1>Средства для ухода</h1>
-		<nav class="breadcrumbs">
-			<ul>
+		<ul class="breadcrumbs">
 				 <li>
-					<a href="">Главная</a>
+					<a href="#">Главная</a>
 				</li>			 
 				 <li>
-					<a href="">Магазин</a>
+					<a href="#">Магазин</a>
 				</li>
 				 <li>
-					<a class="current" href="">Средства для ухода</a>
+					<a>Средства для ухода</a>
 				</li>
-			</ul>
-		</nav>	
+		</ul>		
 		<div class="filters">
-			<h2>Производители:</h2>
-			<form class="filters-vendors" action="https://echo.htmlacademy.ru" method="post">
-				<input type="checkbox" name="choice" id="choice-1">
-				<label for="choice-1">Baxter of California</label>
-				<input type="checkbox" name="choice" id="choice-2">
-				<label for="choice-2">Mr Natty</label>
-				<input type="checkbox" name="choice" id="choice-3">
-				<label for="choice-3">Suavecito</label>
-				<input type="checkbox" name="choice" id="choice-4">
-				<label for="choice-4">Malin+Goetz</label>
-				<input type="checkbox" name="choice" id="choice-5">
-				<label for="choice-5">Murray's</label>
-				<input type="checkbox" name="choice" id="choice-6">
-				<label for="choice-6">American crew</label>
-			</form>		
-			<h2>Группы товаров:</h2>
 			<form class="filters-products" action="https://echo.htmlacademy.ru" method="post">
-				<input type="radio" name="choice" id="choice-7">
-				<label for="choice-7">Бритвенные принадлежности</label>
-				<input type="radio" name="choice" id="choice-8">
-				<label for="choice-8">Средства для ухода</label>
-				<input type="radio" name="choice" id="choice-9">
-				<label for="choice-9">Аксессуары</label>
-			</form>	
-			<a class="btn" href="#">Показать</a>
+				<fieldset>
+					<legend>Производители:</legend>				
+						<input type="checkbox" name="choice" id="choice-1">
+						<label for="choice-1">Baxter of California</label>
+						<input type="checkbox" name="choice" id="choice-2">
+						<label for="choice-2">Mr Natty</label>
+						<input type="checkbox" name="choice" id="choice-3">
+						<label for="choice-3">Suavecito</label>
+						<input type="checkbox" name="choice" id="choice-4">
+						<label for="choice-4">Malin+Goetz</label>
+						<input type="checkbox" name="choice" id="choice-5">
+						<label for="choice-5">Murray's</label>
+						<input type="checkbox" name="choice" id="choice-6">
+						<label for="choice-6">American crew</label>
+				</fieldset>
+				<fieldset>
+					<legend>Группы товаров:</legend>			
+					<input type="radio" name="choice" id="choice-7" value="razor">
+					<label for="choice-7">Бритвенные принадлежности</label>
+					<input type="radio" name="choice" id="choice-8" value="care">
+					<label for="choice-8">Средства для ухода</label>
+					<input type="radio" name="choice" id="choice-9" value="accessories">
+					<label for="choice-9">Аксессуары</label>
+				</fieldset>	
+					<button class="btn" type="submit">Показать</button>			
+			</form>				
 		</div>
-		<div class="features">
-			<div class="features-row-one">
+		<div class="features">			
 				<article>
 					<img src="http://placehold.it/220x165" alt="">
 					<h3>Набор для путешествий Baxter of California</h3>
@@ -93,9 +94,7 @@
 					<h3>Гель для волос Suavecito</h3>
 					<b>290 руб</b>
 					<a class="btn" href="#">Купить</a>
-				</article>
-			</div>
-			<div class="features-row-two">
+				</article>			
 				<article>
 					<img src="http://placehold.it/220x165" alt="">
 					<h3>Глина для укладки волос American crew</h3>
@@ -113,25 +112,22 @@
 					<h3>Набор для бритья Baxter of California</h3>
 					<b>3900 руб</b>
 					<a class="btn" href="#">Купить</a>
-				</article>
-			</div>	
-		</div>
-		<nav class="pages">
-			<ul>
-				<li>
-					<a href="#">1</a>
-				</li>
-				<li>
-					<a class="current" href="#">2</a>
-				</li>
-				<li>
-					<a href="#">3</a>
-				</li>
-				<li>
-					<a href="#">4</a>
-				</li>
-			</ul>
-		</nav>
+				</article>				
+		</div>		
+		<ul class="pages">
+			<li>
+				<a href="#">1</a>
+			</li>
+			<li>
+				<a>2</a>
+			</li>
+			<li>
+				<a href="#">3</a>
+			</li>
+			<li>
+				<a href="#">4</a>
+			</li>
+		</ul>	
 	</main>
 	<footer class="main-footer">
       <div class="container">
